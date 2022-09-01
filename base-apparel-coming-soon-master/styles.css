@@ -11,7 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 
 }
 
@@ -30,4 +30,17 @@ body {
     background-image: url("./images/hero-mobile.jpg");
     min-height: 250px;
     /* width: 100vw; */
+}
+
+.descriptionContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.descriptionContainer-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    color: #CE9898;
+    font-weight: 300;
+    text-align: center;
 }
