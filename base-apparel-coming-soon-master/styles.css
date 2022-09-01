@@ -1,4 +1,11 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
+    padding: 0;
+    margin: 0;
     height: 100vh;
     background-image: url("./images/Rectangle.png");
     background-position: center;
@@ -6,11 +13,21 @@ body {
     background-size: 100% 100%;
     overflow-y: hidden;
 
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
 }
 
 .container {
     display: grid;
-  }
+}
+
+.topPartContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.imageContainer {
+    margin-top: 30px;
+    background-image: url("./images/hero-mobile.jpg");
+    min-height: 250px;
+    /* width: 100vw; */
+}
