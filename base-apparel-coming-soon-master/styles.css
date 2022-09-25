@@ -125,3 +125,70 @@ h1 {
     color: white;
     font-size: 24px;
 }
+
+@media (max-width: 480px) {
+    .topPartContainer {
+        grid-area: header;
+    }
+    .imageContainer {
+        grid-area: middle;
+    }
+    .descriptionContainer {
+        grid-area: bottom;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "middle"
+        "bottom";
+    }
+}
+
+@media (min-width: 481px) {
+    html {
+        overflow-y: hidden;
+    }
+    body {
+        height: 100vh;
+        background-color: red;
+        overflow-y: hidden;
+    }
+    .topPartContainer {
+        grid-area: header;
+        /* border: solid red; */
+        padding-left: 20%;
+        padding-top: 10%;
+    }
+    .imageContainer {
+        grid-area: middle;
+        /* border: solid blue; */
+        height: 100vh;
+        background-image: url("./images/hero-desktop.jpg");
+        background-size: cover;
+    }
+    .descriptionContainer {
+        grid-area: bottom;
+        padding-left: 20%;
+        padding-right: 20%;
+        /* border: solid green; */
+        
+    }
+    .descriptionContainer-title {
+        text-align: left;
+    }
+    .descriptionContainer-subtitle {
+        text-align: left;
+    }
+    .descriptionContainer-description {
+        text-align: left;
+    }
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "header middle"
+        "bottom middle";
+    }
+}
