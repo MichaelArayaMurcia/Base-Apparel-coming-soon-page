@@ -28,11 +28,12 @@
       <h1 class="descriptionContainer-subtitle"> SOON </h1>
       <h1 class="descriptionContainer-description"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</h1>
       <div class="inputContainer">
-        <input class="inputContainer-input" type="text" placeholder="Email Address">
-        <button class="inputContainer-button"> > </button>
+        <input class="inputContainer-input" id="inputContainer-input" type="text" placeholder="Email Address">
+        <button class="inputContainer-button" onClick=ValidateEmail() > > </button>
+        <img id="errorIcon" class="errorIconDisappear" src="./images/icon-error.svg">
       </div>
     </div>
   </div>
-
+  <script src="main.js"></script>
 </body>
 </html>

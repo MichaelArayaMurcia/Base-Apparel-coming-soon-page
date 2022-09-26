@@ -126,6 +126,8 @@ h1 {
     font-size: 24px;
 }
 
+
+
 @media (max-width: 480px) {
     .topPartContainer {
         grid-area: header;
@@ -142,6 +144,27 @@ h1 {
         "header"
         "middle"
         "bottom";
+    }
+    .errorIconAppear {
+        display: flexbox;
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        padding-top: 5px;
+    }
+    .errorIconDisappear {
+        display: none;
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        padding-top: 5px;
+    }
+    .invalidEmail {
+        border: solid #F96464;
+    }
+    
+    .validEmail {
+        border: solid #29CD57;
     }
 }
 
@@ -183,6 +206,9 @@ h1 {
     .descriptionContainer-description {
         text-align: left;
     }
+    .inputContainer-input {
+        border: solid #CE9898;
+    }
     .container {
         height: 100vh;
         display: grid;
@@ -190,5 +216,28 @@ h1 {
         grid-template-areas: 
         "header middle"
         "bottom middle";
+    }
+
+    .invalidEmail {
+        border: solid #F96464;
+    }
+    
+    .validEmail {
+        border: solid #29CD57;
+    }
+
+    .errorIconAppear {
+        display: flexbox;
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        padding-top: 5px;
+    }
+    .errorIconDisappear {
+        display: none;
+        position: absolute;
+        right: 0;
+        padding-right: 80px;
+        padding-top: 5px;
     }
 }
